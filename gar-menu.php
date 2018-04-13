@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>gar-menu.php</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <h1>Garage menu</h1>
 <h2>klant</h2>
+
 <ul>
     <li><a href="gar-create-klant1.php"> create</a></li>
     <li><a href="gar-read-klant.php"> read</a></li>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>gar-zoek-klant2.php</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Imprima" rel="stylesheet">
 </head>
 <body>

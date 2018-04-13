@@ -1,0 +1,20 @@
+::selection {
+  background-color: rgba(4, 2, 255, 0.73);
+  color: white; }
+
+a {
+  text-decoration: none; }
+
+a:link {
+  color: #000000; }
+
+a:visited {
+  color: #000000; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:active {
+  opacity: 0.85; }
+
+/*# sourceMappingURL=style.css.map */

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>gar-delete-klant2.php</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <h1>Garage delete klant 2</h1>

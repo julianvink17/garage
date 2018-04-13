@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>gar-update-klant2.php</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <h1>Garage update klant 2</h1>
