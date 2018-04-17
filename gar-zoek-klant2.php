@@ -22,7 +22,7 @@ $sql = $conn->prepare("select klantid, klantnaam, klantadres, klantpostcode, kla
 
 $sql->execute(["klantid" => $klantid]);
 
-echo "<a href='gar-menu.php'> Terug naar het menu </a>";
+echo "<a href='index.html'> Terug naar het menu </a>";
 
 
 echo "<table border='1px' style= 'font-family: Imprima, sans-serif'>";

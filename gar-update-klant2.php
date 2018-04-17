@@ -22,25 +22,25 @@ $klanten->execute(["klantid" => $klantid]);
 
 echo "<form action='gar-update-klant3.php' method='post'>";
 foreach ($klanten as $klant){
-    echo " klantid: " . $klant["klantid"];
+    echo " klantid: <br/>" . $klant["klantid"];
     echo " <input type='hidden' name='klantidvak'";
-    echo " value=' " . $klant["klantid"] . " '> <br/> ";
+    echo " value=' " . $klant["klantid"] . " '><br/> <br/> ";
 
-    echo " klantnaam: <input type='text' ";
+    echo " klantnaam: <br/><input type='text' ";
     echo " name = 'klantnaamvak' ";
-    echo " value=' " . $klant["klantnaam"] . " '> <br/> ";
+    echo " value=' " . $klant["klantnaam"] . " '> <br/><br/> ";
 
-    echo " klantadres: <input type='text' ";
+    echo " klantadres: <br/><input type='text' ";
     echo " name = 'klantadresvak' ";
-    echo " value=' " . $klant["klantadres"] . " '> <br/> ";
+    echo " value=' " . $klant["klantadres"] . " '> <br/><br/> ";
 
-    echo " klantpostcode: <input type='text' ";
+    echo " klantpostcode: <br/><input type='text' ";
     echo " name = 'klantpostcodevak' ";
-    echo " value=' " . $klant["klantpostcode"] . " '> <br/> ";
+    echo " value=' " . $klant["klantpostcode"] . " '> <br/><br/> ";
 
-    echo " klantplaats: <input type='text' ";
+    echo " klantplaats: <br/><input type='text' ";
     echo " name = 'klantplaatsvak' ";
-    echo " value=' " . $klant["klantplaats"] . " '> <br/> ";
+    echo " value=' " . $klant["klantplaats"] . " '> <br/><br/> ";
 
 }
 echo "<input type='submit'>";

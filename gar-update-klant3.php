@@ -30,7 +30,7 @@ $sql->execute([
     "klantplaats"     => $klantplaats
 ]);
 echo "De klant is gewijzigd <br/>";
-echo "<a href='gar-menu.php'> Terug naar het menu </a>"
+echo "<a href='index.html'> Terug naar het menu </a>"
 
 ?>
 

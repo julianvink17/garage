@@ -28,7 +28,7 @@ else{
     echo "De gegevens zijn <bold>NIET</bold> verwijderd. <br/>";
 }
 
-echo "<a href='gar-menu.php'>Terug naar het menu. </a>";
+echo "<a href='index.html'>Terug naar het menu. </a>";
 
 ?>
 
