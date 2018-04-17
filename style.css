@@ -3,18 +3,23 @@
   color: white; }
 
 a {
-  text-decoration: none; }
-
-a:link {
-  color: #000000; }
-
-a:visited {
-  color: #000000; }
+  color: #2fff07;
+  text-decoration: none;
+  text-shadow: 0.4px 0.4px; }
 
 a:hover {
   text-decoration: underline; }
 
 a:active {
   opacity: 0.85; }
+
+ul {
+  list-style-type: none; }
+
+.test1 a:hover .img {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg); }
 
 /*# sourceMappingURL=style.css.map */
