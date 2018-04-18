@@ -17,17 +17,19 @@ $klantnaam      = $_POST["klantnaamvak"];
 $klantadres     = $_POST["klantadresvak"];
 $klantpostcode  = $_POST["klantpostcodevak"];
 $klantplaats    = $_POST["klantplaatsvak"];
+$klantemail    = $_POST["klantemailvak"];
 
 require_once "gar-connect.php";
 
-$sql = $conn->prepare("update klant set klantnaam = :klantnaam, klantadres = :klantadres, klantpostcode = :klantpostcode, klantplaats = :klantplaats where klantid = :klantid");
+$sql = $conn->prepare("update klant set klantnaam = :klantnaam, klantadres = :klantadres, klantpostcode = :klantpostcode, klantplaats = :klantplaats, klantemail = :klantemail where klantid = :klantid");
 
 $sql->execute([
     "klantid"         => $klantid,
     "klantnaam"       => $klantnaam,
     "klantadres"      => $klantadres,
     "klantpostcode"   => $klantpostcode,
-    "klantplaats"     => $klantplaats
+    "klantplaats"     => $klantplaats,
+    "klantemail"     => $klantemail
 ]);
 echo "De klant is gewijzigd <br/>";
 echo "<a href='index.html'> Terug naar het menu </a>"

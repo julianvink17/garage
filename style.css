@@ -1,6 +1,5 @@
 ::selection {
-  background-color: rgba(6, 59, 134, 0.51);
-  color: black; }
+  background-color: rgba(6, 59, 134, 0.51); }
 
 a {
   color: rgba(13, 75, 2, 0.96);
@@ -87,8 +86,8 @@ input[type=submit]:hover {
     right: -2px; } }
 .animation1 > h2 {
   opacity: 0;
-  -webkit-animation: test4 2.5s;
-  animation: test4 2.5s;
+  -webkit-animation: test4 1s;
+  animation: test4 1s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   animation-delay: 0.2s;
@@ -104,5 +103,73 @@ input[type=submit]:hover {
     opacity: 0; }
   100% {
     opacity: 1; } }
+.animation2 > h2 {
+  opacity: 0;
+  -webkit-animation: test5 1s;
+  animation: test5 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s; }
+
+@-webkit-keyframes test5 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes test5 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px; }
+
+.check input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer; }
+
+.checkmark {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #8fbd9f;
+  border: solid 1px rgba(6, 8, 255, 0.38); }
+
+.check:hover input ~ .checkmark {
+  background-color: rgba(24, 110, 177, 0.75); }
+
+.check input:checked ~ .checkmark {
+  background-color: #186eb1; }
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+.check input:checked ~ .checkmark:after {
+  display: block; }
+
+.check .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg); }
+
+th, td {
+  padding: 3px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -17,9 +17,10 @@ $klantnaam      = $_POST["klantnaamvak"];
 $klantadres     = $_POST["klantadresvak"];
 $klantpostcode  = $_POST["klantpostcodevak"];
 $klantplaats    = $_POST["klantplaatsvak"];
+$klantemail    = $_POST["klantemailvak"];
 require_once "gar-connect.php";
 
-$sql = $conn->prepare("insert into klant values(:klantid, :klantnaam, :klantadres, :klantpostcode, :klantplaats)");
+$sql = $conn->prepare("insert into klant values(:klantid, :klantnaam, :klantadres, :klantpostcode, :klantplaats, :klantemail)");
 
 $sql->execute([
     "klantid"         => $klantid,
@@ -27,8 +28,9 @@ $sql->execute([
     "klantadres"      => $klantadres,
     "klantpostcode"   => $klantpostcode,
     "klantplaats"     => $klantplaats,
+    "klantemail"     => $klantemail,
             ]);
-echo "De klant is toegevoegd <br/>";
+echo "De klant is toegevoegd <br/><br/>";
 echo "<a href='index.html'> Terug naar het menu </a>"
 ?>
 </body>

@@ -15,6 +15,7 @@
     Klantadres:   <br/>  <input type="text" name="klantadresvak" placeholder="Adres"> <br/><br/>
     Klantpostcode: <br/> <input type="text" name="klantpostcodevak" placeholder="Postcode"> <br/><br/>
     Klantplaats:  <br/>  <input type="text" name="klantplaatsvak" placeholder="Plaats"> <br/><br/>
+    Klantemail:  <br/>  <input type="text" name="klantemailvak" placeholder="Email"> <br/><br/>
     <input type="submit">
 </form>
 </body>

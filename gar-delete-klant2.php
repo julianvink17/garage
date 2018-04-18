@@ -17,18 +17,27 @@ $klantid = $_POST["klantidvak"];
 
 require_once "gar-connect.php";
 
-$klanten = $conn->prepare("select klantid, klantnaam, klantadres, klantpostcode, klantplaats from klant where klantid = :klantid");
+$klanten = $conn->prepare("select klantid, klantnaam, klantadres, klantpostcode, klantplaats, klantemail from klant where klantid = :klantid");
 
 $klanten->execute(["klantid" => $klantid]);
 
-echo "<table>";
+echo "<table border='1px' style= 'font-family: Imprima, sans-serif'>";
+echo "<tr>";
+echo "<th style='color: red'>ID</th>";
+echo "<th style='color: blue'>Naam</th>";
+echo "<th style='color: green'>Adres</th>";
+echo "<th style='color: black'>Postcode</th>";
+echo "<th style='color: darkviolet'>Plaats</th>";
+echo "<th style='color: orangered'>Plaats</th>";
+echo "</tr>";
 foreach ($klanten as $klant){
-    echo "<tr>";
+    echo "<tr style='text-align: center'>";
         echo "<td>" . $klant["klantid"] . "</td>";
         echo "<td>" . $klant["klantnaam"] . "</td>";
         echo "<td>" . $klant["klantadres"] . "</td>";
         echo "<td>" . $klant["klantpostcode"] . "</td>";
         echo "<td>" . $klant["klantplaats"] . "</td>";
+        echo "<td>" . $klant["klantemail"] . "</td>";
         echo "</tr>";
 }
 
@@ -38,8 +47,11 @@ echo "<form action='gar-delete-klant3.php' method= 'post'>";
 
 echo "<input type='hidden' name='klantidvak' value=$klantid>";
 echo "<input type='hidden' name='verwijdervak' value='0'>";
+echo "<label class='check'>";
 echo "<input type='checkbox' name='verwijdervak' value='1'>";
-echo "Verwijder deze klant. <br/>";
+echo "<span class='checkmark'></span>";
+echo "</label>";
+echo "&emsp;&emsp;Verwijder deze klant. <br/><br/>";
 echo "<input type='submit'>";
 echo "</form>";
 

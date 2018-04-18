@@ -18,7 +18,7 @@ $klantid = $_POST["klantidvak"];
 
 require_once "gar-connect.php";
 
-$sql = $conn->prepare("select klantid, klantnaam, klantadres, klantpostcode, klantplaats from klant where klantid = :klantid");
+$sql = $conn->prepare("select klantid, klantnaam, klantadres, klantpostcode, klantplaats, klantemail from klant where klantid = :klantid");
 
 $sql->execute(["klantid" => $klantid]);
 
@@ -32,6 +32,7 @@ echo "<th style='color: #294181'>Naam</th>";
 echo "<th style='color: #294181'>Adres</th>";
 echo "<th style='color: #294181'>Postcode</th>";
 echo "<th style='color: #294181'>Plaats</th>";
+echo "<th style='color: #294181'>Email</th>";
 echo "</tr>";
 
     foreach ($sql as $rij) {
@@ -41,6 +42,7 @@ echo "</tr>";
         echo "<td>" . $rij["klantadres"] . "</td>";
         echo "<td>" . $rij["klantpostcode"] . "</td>";
         echo "<td>" . $rij["klantplaats"] . "</td>";
+        echo "<td>" . $rij["klantemail"] . "</td>";
         echo "</tr>";
         $value = $rij["klantid"];
     }

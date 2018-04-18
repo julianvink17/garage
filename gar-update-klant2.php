@@ -15,7 +15,7 @@ $klantid = $_POST["klantidvak"];
 
 require_once "gar-connect.php";
 
-$klanten = $conn->prepare("select klantid, klantnaam, klantadres, klantpostcode, klantplaats from klant where klantid = :klantid");
+$klanten = $conn->prepare("select klantid, klantnaam, klantadres, klantpostcode, klantplaats, klantemail from klant where klantid = :klantid");
 
 
 $klanten->execute(["klantid" => $klantid]);
@@ -41,6 +41,10 @@ foreach ($klanten as $klant){
     echo " klantplaats: <br/><input type='text' ";
     echo " name = 'klantplaatsvak' ";
     echo " value=' " . $klant["klantplaats"] . " '> <br/><br/> ";
+
+    echo " klantemail: <br/><input type='text' ";
+    echo " name = 'klantemailvak' ";
+    echo " value=' " . $klant["klantemail"] . " '> <br/><br/> ";
 
 }
 echo "<input type='submit'>";
