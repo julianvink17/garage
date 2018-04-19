@@ -16,6 +16,7 @@
     <input type="text" name="klantidvak"> <br/>
     <input type="submit">
 </form>
+
 </body>
 
 </html>

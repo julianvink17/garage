@@ -1,4 +1,6 @@
-
+body{
+  padding: 10px;
+}
 
 ::selection{
   background-color: rgba(6, 59, 134, 0.51);
@@ -182,6 +184,19 @@ input[type=checkbox]{
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
 }
-th,td{
-  padding: 3px;
+td{
+  padding: 10px;
+
+}
+th{
+  padding: 10px;
+  border-bottom: solid 1px;
+  border-top: solid 1px;
+
+}
+table{
+  border-collapse: collapse;
+  border-bottom: solid 1px;
+  border-left: solid 1px;
+  border-right: solid 1px;
 }

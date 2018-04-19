@@ -18,7 +18,7 @@
     $sql = $conn->prepare("select klantid, klantnaam, klantadres, klantpostcode, klantplaats, klantemail from klant");
 
     $sql->execute();
-echo "<table border='1px' style= 'font-family: Imprima, sans-serif'>";
+echo "<table style= 'font-family: Imprima, sans-serif'>";
 echo "<tr>";
 echo "<th style='color: red'>ID</th>";
 echo "<th style='color: blue'>Naam</th>";
@@ -30,12 +30,12 @@ echo "</tr>";
 
 foreach ($sql as $rij) {
     echo "<tr style='text-align: center'>";
-    echo "<td>" . $rij["klantid"] . "</td>";
-    echo "<td>" . $rij["klantnaam"] . "</td>";
-    echo "<td>" . $rij["klantadres"] . "</td>";
-    echo "<td>" . $rij["klantpostcode"] . "</td>";
-    echo "<td>" . $rij["klantplaats"] . "</td>";
-    echo "<td>" . $rij["klantemail"] . "</td>";
+    echo "<td style='color: red'>" . $rij["klantid"] . "</td>";
+    echo "<td style='color: blue'>" . $rij["klantnaam"] . "</td>";
+    echo "<td style='color: green'>" . $rij["klantadres"] . "</td>";
+    echo "<td style='color: black'>" . $rij["klantpostcode"] . "</td>";
+    echo "<td style='color: darkviolet'>" . $rij["klantplaats"] . "</td>";
+    echo "<td style='color: orangered'>" . $rij["klantemail"] . "</td>";
     echo "</tr>";
     $value = $rij["klantid"];
 }

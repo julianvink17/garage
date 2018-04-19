@@ -15,6 +15,8 @@
 $klantid = $_POST["klantidvak"];
 $verwijderen = $_POST["verwijdervak"];
 
+
+
 if ($verwijderen){
     require_once "gar-connect.php";
 

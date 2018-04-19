@@ -25,34 +25,35 @@ $sql->execute(["klantid" => $klantid]);
 echo "<a href='index.html'> Terug naar het menu </a>";
 
 
-echo "<table border='1px' style= 'font-family: Imprima, sans-serif'>";
-echo "<tr style='border-color: #09810c'>";
+echo "<table style= 'font-family: Imprima, sans-serif'>";
+echo "<tr>";
 echo "<th style='color: red'>ID</th>";
-echo "<th style='color: #294181'>Naam</th>";
-echo "<th style='color: #294181'>Adres</th>";
-echo "<th style='color: #294181'>Postcode</th>";
-echo "<th style='color: #294181'>Plaats</th>";
-echo "<th style='color: #294181'>Email</th>";
+echo "<th style='color: blue'>Naam</th>";
+echo "<th style='color: green'>Adres</th>";
+echo "<th style='color: black'>Postcode</th>";
+echo "<th style='color: darkviolet'>Plaats</th>";
+echo "<th style='color: orangered'>Email</th>";
 echo "</tr>";
+
 
     foreach ($sql as $rij) {
         echo "<tr style='text-align: center'>";
         echo "<td style='color: red'>" . $rij["klantid"] . "</td>";
-        echo "<td>" . $rij["klantnaam"] . "</td>";
-        echo "<td>" . $rij["klantadres"] . "</td>";
-        echo "<td>" . $rij["klantpostcode"] . "</td>";
-        echo "<td>" . $rij["klantplaats"] . "</td>";
-        echo "<td>" . $rij["klantemail"] . "</td>";
+        echo "<td style='color: blue'>" . $rij["klantnaam"] . "</td>";
+        echo "<td style='color: green'>" . $rij["klantadres"] . "</td>";
+        echo "<td style='color: black'>" . $rij["klantpostcode"] . "</td>";
+        echo "<td style='color: darkviolet'>" . $rij["klantplaats"] . "</td>";
+        echo "<td style='color: orangered'>" . $rij["klantemail"] . "</td>";
         echo "</tr>";
-        $value = $rij["klantid"];
+
     }
     echo "</table><br/>";
 
-if($value > 0) {
+if($rij["klantid"] > 0) {
     echo "GEVONDEN!";
 }
 else{
-    echo "ID NIET BESCHIKBAAR!";
+    echo "ID NIET GEVONDEN!";
 
 }
 
