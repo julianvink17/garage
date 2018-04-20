@@ -25,7 +25,7 @@ $sql->execute(["klantnaam" => $klantnaam]);
 echo "<a href='index.html'> Terug naar het menu </a>";
 
 
-echo "<table border='1px' style= 'font-family: Imprima, sans-serif'>";
+echo "<table border='1px'>";
 echo "<tr style='border-color: #09810c'>";
 echo "<th style='color: red'>ID</th>";
 echo "<th style='color: blue'>Naam</th>";

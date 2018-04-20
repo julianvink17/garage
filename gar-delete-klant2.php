@@ -32,12 +32,12 @@ echo "<th style='color: orangered'>Plaats</th>";
 echo "</tr>";
 foreach ($klanten as $klant){
     echo "<tr style='text-align: center'>";
-        echo "<td>" . $klant["klantid"] . "</td>";
-        echo "<td>" . $klant["klantnaam"] . "</td>";
-        echo "<td>" . $klant["klantadres"] . "</td>";
-        echo "<td>" . $klant["klantpostcode"] . "</td>";
-        echo "<td>" . $klant["klantplaats"] . "</td>";
-        echo "<td>" . $klant["klantemail"] . "</td>";
+        echo "<td style='color: red'>" . $klant["klantid"] . "</td>";
+        echo "<td style='color: blue'>" . $klant["klantnaam"] . "</td>";
+        echo "<td style='color: green'>" . $klant["klantadres"] . "</td>";
+        echo "<td style='color: black'>" . $klant["klantpostcode"] . "</td>";
+        echo "<td style='color: darkviolet'>" . $klant["klantplaats"] . "</td>";
+        echo "<td style='color: orangered'>" . $klant["klantemail"] . "</td>";
         echo "</tr>";
 }
 

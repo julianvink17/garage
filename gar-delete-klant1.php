@@ -13,7 +13,7 @@
 </p>
 <form action="gar-delete-klant2.php" method="post">
     Welk klantid wilt u verwijderen?
-    <input type="text" name="klantidvak"> <br/>
+    <input type="text" name="klantidvak" placeholder="KlantID"> <br/>
     <input type="submit">
 </form>
 </body>
